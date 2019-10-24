@@ -1,0 +1,27 @@
+{
+  "name": "@wxmp/mtemplate",
+  "version": "1.0.0",
+  "description": "weixin miniprogram template",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merfais/mtemplate.git"
+  },
+  "keywords": [
+    "weixin",
+    "miniprogram",
+    "template",
+    "mp",
+    "minimp",
+    "mini"
+  ],
+  "author": "coffeebi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/merfais/mtemplate/issues"
+  },
+  "homepage": "https://github.com/merfais/mtemplate#readme"
+}
