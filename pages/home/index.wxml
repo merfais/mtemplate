@@ -1,0 +1,17 @@
+<m-bg-loading wx:if='{{status !== pageStatus.ready}}'
+  status='{{status}}'
+  bindrefresh='render'
+  />
+<view wx:else class='page-wrapper'>
+  <text>{{comment}}</text>
+  <view class='btn' bindtap='tapComment'>我要吐槽</view>
+  <view class='btn' bindtap='tapLink'>点我去详情页</view>
+  <view class='btn' bindtap='tapLog'>点我LOG</view>
+  <m-loading-bar
+    has-more='{{hasMore}}'
+    status='{{bottomLoadingStatus}}'
+    bindretry='onLoadMore'
+    />
+</view>
+<m-input-panel />
+<m-login />

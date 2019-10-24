@@ -1,0 +1,26 @@
+<m-nav-top with-home />
+<view class="container">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="userinfo">
+    <button wx:if="{{!nickName}}"
+      bindtap='getUserInfo'
+      >
+      获取用户信息
+    </button>
+    <block wx:else>
+      <image
+        class="userinfo-avatar"
+        src="{{avatarUrl}}"
+        mode="cover"
+        bindtap="tapPreview"
+        />
+      <text class="userinfo-nickname">昵称：{{nickName}}</text>
+      <text class="userinfo-nickname">性别：{{gender === 1 ? '男': '女'}}</text>
+      <text class="userinfo-nickname">位置：{{country}}.{{province}}.{{city}}</text>
+      <text class="userinfo-nickname"></text>
+      <text class="userinfo-nickname"></text>
+    </block>
+  </view>
+</view>

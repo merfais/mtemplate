@@ -1,0 +1,27 @@
+<m-bg-loading wx:if='{{status !== pageStatus.ready}}'
+  status='{{status}}'
+  bindrefresh='render'
+  />
+<view wx:else class="container">
+  <view class="userinfo">
+    <button wx:if="{{!nickName}}"
+      bindtap='getUserInfo'
+      >
+      点我登录
+    </button>
+    <block wx:else>
+      <image
+        class="userinfo-avatar"
+        src="{{avatarUrl}}"
+        mode="cover"
+        bindtap="tapPreview"
+        />
+      <text class="userinfo-nickname">昵称：{{nickName}}</text>
+      <text class="userinfo-nickname">性别：{{gender === 1 ? '男': '女'}}</text>
+      <text class="userinfo-nickname">位置：{{country}}.{{province}}.{{city}}</text>
+      <text class="userinfo-nickname"></text>
+      <text class="userinfo-nickname"></text>
+    </block>
+  </view>
+</view>
+<m-login />
