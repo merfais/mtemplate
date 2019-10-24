@@ -1,0 +1,15 @@
+<view class="fading-circle" style="height:{{height}};width:{{width}};">
+  <view class="circle1 circle"></view>
+  <view class="circle2 circle"></view>
+  <view class="circle3 circle"></view>
+  <view class="circle4 circle"></view>
+  <view class="circle5 circle"></view>
+  <view class="circle6 circle"></view>
+  <view class="circle7 circle"></view>
+  <view class="circle8 circle"></view>
+  <view class="circle9 circle"></view>
+  <view class="circle10 circle"></view>
+  <view class="circle11 circle"></view>
+  <view class="circle12 circle"></view>
+</view>
+

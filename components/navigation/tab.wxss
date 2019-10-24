@@ -1,0 +1,22 @@
+.tab-wrapper {
+  background-color: #fff;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.item-wrapper {
+  margin: 0 70rpx;
+  line-height: 72rpx;
+  color: #888888;
+  font-size: 32rpx;
+}
+
+.active {
+  border-bottom: 8rpx solid #2883E9;
+  color: #222222;
+  font-weight: bold;
+}

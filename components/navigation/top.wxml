@@ -1,0 +1,20 @@
+<view wx:if="{{show}}" style="height:{{height}}px" />
+<view wx:if="{{show}}"
+  class="navigation-wrapper"
+  style="height:{{height}}px"
+  >
+  <view class="title-wrapper"
+    style="height:{{menuHeight}}px;"
+    >
+    <navigator wx:if='{{showBackArrow || withHome}}'
+      class='back-arrow'
+      hover-class='back-arrow-touched'
+      hover-start-time='0'
+      open-type='{{withHome ? "switchTab" : "navigateBack"}}'
+      catchtap='tapNavigate'
+      >
+      <view wx:if='{{withHome}}' class='home'>首页</view>
+    </navigator>
+    <view class='{{showBackArrow ? "" : "title"}}'>{{title}}</view>
+  </view>
+</view>

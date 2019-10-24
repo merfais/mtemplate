@@ -1,0 +1,36 @@
+<view
+  class='shade-cover {{show && "show"}}'
+  catchtap='tapShade'
+  catchtouchmove='true'
+  />
+<view class='edit-block {{show && "show"}}'
+  style='bottom: {{inputPanelBottom}}px;'
+  >
+  <form class='form'
+    bindsubmit='submit'
+    >
+    <textarea class='textarea'
+      name='content'
+      value='{{value}}'
+      placeholder='{{placeholder}}'
+      placeholder-class='placeholder'
+      maxlength='150'
+      focus='{{focus}}'
+      show-confirm-bar="{{false}}"
+      confirm-type='send'
+      adjust-position='{{false}}'
+      bindinput='onInput'
+      bindfocus='onFocus'
+      bindblur='onBlur'
+      bindconfirm='submit'
+      />
+    <view class='submit-btn-wrapper'>
+      <button
+        class='submit-btn {{disableSubmit ? "disable" : ""}}'
+        form-type='submit'
+        >
+        发表
+      </button>
+    </view>
+  </form>
+</view>

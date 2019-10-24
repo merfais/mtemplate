@@ -1,0 +1,15 @@
+.loading-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  color: #c0c0c0;
+  line-height: 40rpx;
+  font-size: 30rpx;
+}
+
+.loading {
+  display: block;
+  margin-top: -8rpx;
+  margin-right: 15rpx;
+}

@@ -1,0 +1,17 @@
+<view class="loading-bar-wrapper"
+  bindtap='onTap'
+  >
+  <m-circle-loading class='loading' />
+  <view wx:if='{{status === pageStatus.noNetwork || !networkIsConnected}}'>
+    {{noNetworkText}}
+  </view>
+  <view wx:elif='{{status === pageStatus.error}}'>
+    {{errorText}}
+  </view>
+  <view wx:elif='{{!hasMore}}'>
+    {{noMoreText}}
+  </view>
+  <view wx:else>
+    {{loadingText}}
+  </view>
+</view>

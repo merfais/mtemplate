@@ -1,0 +1,7 @@
+<view class="wave">
+  <view class="rect rect1" style="height:{{height}};width:{{width}};margin:{{margin}};background:{{color}};"/>
+  <view class="rect rect2" style="height:{{height}};width:{{width}};margin:{{margin}};background:{{color}};"/>
+  <view class="rect rect3" style="height:{{height}};width:{{width}};margin:{{margin}};background:{{color}};"/>
+  <view class="rect rect4" style="height:{{height}};width:{{width}};margin:{{margin}};background:{{color}};"/>
+  <view class="rect rect5" style="height:{{height}};width:{{width}};margin:{{margin}};background:{{color}};"/>
+</view>

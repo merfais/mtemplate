@@ -1,0 +1,34 @@
+<view class="page-wrapper">
+  <view class="content-wrapper"
+    style='top: {{top}};{{absolute ? "position: absolute;" : ""}}'
+    >
+    <block wx:if="{{status === pageStatus.loading}}">
+      <m-wave-loading />
+      <view class='loading-tips'>{{loadingTips}}</view>
+    </block>
+    <block wx:else>
+      <image class="error-image"
+        src=""
+        />
+      <view class='error-tips'>
+        <block wx:if='{{!networkIsConnected || status === pageStatus.noNetwork}}'>
+          <view>当前网络不可用</view>
+          <view>请检查你的网络设置</view>
+        </block>
+        <block wx:else>
+          <view class='error-tips'>{{errorTips}}</view>
+        </block>
+      </view>
+      <view class="refresh-btn"
+        bindtap="tapRefresh"
+        >
+        刷新试试
+      </view>
+      <view wx:if='{{showGoHomeBtn}}' class="refresh-btn"
+        bindtap="goHome"
+        >
+        回到首页
+      </view>
+    </block>
+  </view>
+</view>

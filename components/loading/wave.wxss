@@ -1,0 +1,31 @@
+.wave {
+  text-align: center;
+  font-size: 10px;
+}
+.wave .rect {
+  display: inline-block;
+  animation: waveStretchDelay 1.2s infinite ease-in-out;
+}
+.wave .rect1 {
+  animation-delay: -1.2s;
+}
+.wave .rect2 {
+  animation-delay: -1.1s;
+}
+.wave .rect3 {
+  animation-delay: -1s;
+}
+.wave .rect4 {
+  animation-delay: -0.9s;
+}
+.wave .rect5 {
+  animation-delay: -0.8s;
+}
+@keyframes waveStretchDelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}

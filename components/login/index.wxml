@@ -1,0 +1,33 @@
+<view wx:if='{{show}}'
+  class='auth-cover {{ fullCover ? "not-opacity" : "half-opacity" }}'
+  style='{{coverStyle}}'
+  catchtap='handleCancel'
+  catchtouchmove='none'
+  >
+  <view
+    class='auth-dialog'
+    style='{{dialogStyle}}'
+    catchtap='none'
+    >
+    <view class='dialog-content'>
+      请登录后进行相关操作
+    </view>
+    <view class='dialog-content-line'></view>
+    <view class='dialog-btn-wrapper'>
+      <button class='dialog-btn cancel'
+        catchtap='handleCancel'
+        >
+        取消
+      </button>
+      <view class='dialog-btn-line'></view>
+      <button class='dialog-btn approve'
+        open-type='getUserInfo'
+        lang='zh_CN'
+        catchtap='handleApprove'
+        bindgetuserinfo='handleGetUserInfo'
+        >
+        确定
+      </button>
+    </view>
+  </view>
+</view>
